@@ -3,34 +3,44 @@ body{
 }
 .header{
     background-color: #ffffff;
-    /* border-color: #cccccc; */
-    /* border: 1px solid red; */
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     
+    
+ }
+
+ .header .head-text{
+background-color: #4aaaa5;
+width: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 65px;
  }
 
 .header h1{
     font-family: 'Times New Roman', Times, serif;
-    background-color: #4aaaa5;
-    width: 300px;
-    height: 52px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 220px;
-    padding-top: 10px;
+    
+    font: 18px;
+
     position: absolute;
     z-index: 1; 
     
 }
 
 .head-nav{
-    border: 1px solid #cccccc;
-    height: 60px;
-    width: 1800px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
 }
-.header a{
+
+.head-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-nav a{
     float: right;
     text-decoration: none;
     margin-right: 50px;
@@ -88,12 +98,12 @@ body{
 }
 .main-section-form {
     width: 600px;
-    height: 500px;
+    height: 600px;
     border: 1px #dddddd;
     background-color: #ffffff;
     margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 30px;
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -101,16 +111,20 @@ body{
 }
 .main-form{
     float: left;
-    width: 590px;
+    width: 540px;
     border: none;
-    height: 480px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .main-form h1{
     color: #4aaaa5;
+    font-size: 25px;
+      
 }
+
+
 .main-form button{
     background-color: #4aaaa5;
     border: none;
@@ -128,7 +142,124 @@ body{
     color: #777777;
 
 }
-.main-form 
+
+
+            /* PORTFOLIO MAIN */
+
+
+.main-portfolio {
+    display: flex;
+    justify-content: center;
+
+}
+.main-portfolio-article {
+    width: 600px;
+    height: 800px;
+    border: 1px #dddddd;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.image-part1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.image-part2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.image-part3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-image{
+    padding: 30px;
+}
+.main-image h1{
+    color: #4aaaa5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.main-image hr{
+    width: 520px;
+}
+.main-image img{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.image-part1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 250px;
+    height: 40px;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    z-index: 1;
+    
+    
+
+}
+
+.image-part2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 250px;
+    height: 40px;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.image-part3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 250px;
+    height: 40px;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.last-image{
+    width: 100%;
+   
+}
+
+.last-image img{
+    margin-left: 11px;
+}
+.last-image p{
+    margin-left: 11px;
+}
+
+
+
+
+        
+ 
 
            
 
@@ -138,11 +269,11 @@ body{
 
 .aside {
      width: 240px;
+     height: 200px;
      border: 1px #dddddd;
-     background-color: #b42d2d;
-     height: 150px;
+     background-color: #ffffff;
      margin-top: 20px;
-     padding-left: 10px;
+     
      
      
     
@@ -151,22 +282,21 @@ body{
         color: #4aaaa5;
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 30px;
+        margin-top: 30px;
 
+    }
+
+    .aside hr{
+        width: 200px;
+        margin-bottom: 20px;
     }
     .aside i{
         padding-left: 25px;
+
+    
         
     }
-    /* .icon1 {
-        background-color: black;
-    }
-    .icon2{
-        color: blue;
-    }
-    .icon3{
-        color: rgb(255, 187, 0);
-    } */
-
 
                  /* FOOTER */
 
